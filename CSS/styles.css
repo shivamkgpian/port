@@ -64,7 +64,7 @@
     text-align: center;
     background-color: #dd5f20;
     height: 90px;
-    padding: 5px 0 17px 0;
+    padding: 13px 0 17px 0;
     
 }
 .footer-link{
@@ -84,6 +84,8 @@
     display: inline-block;
     border-radius: 100px;
     transition: all .2s;
+    animation-name: fadein;
+    animation-duration: 4s;
 }
 .btn:hover{
     transform: translateY(-3px);

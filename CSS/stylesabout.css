@@ -33,13 +33,21 @@
     align-content: center;
     justify-content: center;
 }
-#lowermain {
+
+
+.text{
+    width:40% ;
     position: relative;
-    width: 40%;
-}
-#lowemain {
     float: right;
-    position: relative;
+    text-align: center;
+    top: 130px;
+    right: 190px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+.text h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
 }
 .abt h1{
     font-size: 70px;
@@ -49,4 +57,119 @@
 .abt .me{
     font-family: 'Sacramento', cursive;
     color: rgb(224, 86, 61);
+}
+.sep{
+    border-style: none;
+  border-top: dotted;
+  border-color: #141414;
+  border-width: 8px;
+  width: 10%;
+  margin: 100px auto;
+  background-color: white;
+}
+.sk{
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+.sk h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+.skills-bar{
+    width: 600px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px 30px;
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.2);
+}
+.skills-bar .bar{
+    margin: 20px 0;
+}
+.skills-bar .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+}
+.skills-bar .bar .progress-line{
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0 ;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05),
+                      0px 1px 1px rgba(225,225,225,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line span{
+    height: 100%;
+    width: 80%;
+    background: #6665ee;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05),
+                      0px 1px 1px rgba(225,225,225,0.8);
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+}
+.progress-line.html span{
+    width: 70%;
+}
+.progress-line.css span{
+    width: 50%;
+}
+.progress-line.c span{
+    width: 80%;
+}
+.progress-line.cpp span{
+    width: 80%;
+}
+.progress-line.Javascript span{
+    width: 10%;
+}
+
+.progress-line.html span::after{
+    content: 70%;
+}
+.progress-line.css span::after{
+    content: 50%;
+}
+.progress-line.c span::after{
+    content: 80%;
+}
+.progress-line.cpp span::after{
+    content: 80%;
+}
+.progress-line.JavaScript span::after{
+    content: 10%;
+}
+
+.bottom-container{
+    margin-top:50px;
+    text-align: center;
+    background-color: #FC4F4F;
+    height: 90px;
+    padding: 13px 0 17px 0;
+    
+}
+.footer-link{
+    margin-top: 10px;
+    padding-right: 45px;
+}
+.copyryt{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 15px;
+    font-weight: 600;
+}
+.shiv{
+    color:#F1D00A;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
 }
